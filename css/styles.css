@@ -123,6 +123,11 @@ main:has(.about-content):not(.scrollable) h1 {
     color: #666;
 }
 
+/* Work experience descriptions - gray color (Experience page only) */
+main.scrollable .about-content p:has(a):not(:has(a[href*="github.com"])) + p:not(:has(a)) {
+    color: #666;
+}
+
 
 /* Social Icons */
 
