@@ -118,6 +118,13 @@ main:has(.about-content):not(.scrollable) h1 {
     align-items: baseline;
 }
 
+/* Work experience company names with dates - align dates to right */
+.about-content p:has(a):not(:has(a[href*="github.com"])):has(span) {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
 /* Technology descriptions - gray color */
 .about-content p:has(a[href*="github.com"]) + p {
     color: #666;
